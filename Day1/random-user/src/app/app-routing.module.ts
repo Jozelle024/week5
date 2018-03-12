@@ -6,9 +6,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
-  {path: '/home', component: HomeComponent},
-  {path: '/gallery', component: GalleryComponent},
-  {path: '/contact', component: ContactComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'gallery', component: GalleryComponent},
+  {path: 'contact', component: ContactComponent},
   {path: '' , redirectTo: '/home', pathMatch: 'full'},
   {path: '**', component: ErrorComponent}
 ];

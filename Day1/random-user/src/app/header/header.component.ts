@@ -12,7 +12,8 @@ export class HeaderComponent implements OnInit {
   constructor(private context: ContextService) { }
 
   ngOnInit() {
-    this.vociMenu = this.context.getMenu();
+    this.vociMenu = this.context.getMenu().sort((a, b) => {
+       return (a.ordine < b.ordine) ? a.ordine : b.ordine; });
   }
 
 }
