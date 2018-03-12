@@ -1,0 +1,21 @@
+<h2>Lista degli eroi</h2>
+
+<p><i>Scegli un eroe dalla lista</i></p>
+
+<div *ngIf="heroes">
+  <ul class= "heroes">
+    <li *ngFor="let eroe of heroes">
+      <a routerLink="/detail/{{eroe.id}}">
+      
+      <span class="badge">{{eroe.id}}</span>
+      {{eroe.name | uppercase}}
+      </a>  
+      <!-- <a routerLink="/detail/{{eroe.id}}"></a> -->
+    </li>
+  </ul>
+</div>
+
+
+<p *ngIf="heroes.length > 3">Quanti eroi ci sono!</p>
+
+<app-hero-detail [hero] = "selectedHero"></app-hero-detail>

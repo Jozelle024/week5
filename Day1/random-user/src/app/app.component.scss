@@ -1,0 +1,19 @@
+@import './_variables.scss';
+
+
+app-header{
+    background-color: $primary-color;
+    display: flex;
+    width: 100%;
+}
+
+main{
+    background-color: $secondary-color;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: $terziary-color;
+    width: 100%;
+}
+

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+$primary-color: #2c2c34;
+$secondary-color:  #fcfcfc;
+$terziary-color: white;
+
+$font-family: Arial, Helvetica, Sans Serif;
+$font-size: 16px;
+
+
+app-root{
+    display:flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    height: 100vh;
+}
