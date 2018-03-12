@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.vociMenu = this.context.getMenu().sort((a, b) => {
-       return (a.ordine < b.ordine) ? a.ordine : b.ordine; });
-  }
-
+       return b.ordine - a.ordine; });
+       //(a.ordine < b.ordine) ? a.ordine : b.ordine;});
+}
 }

@@ -7,8 +7,8 @@ export class ContextService {
   private vociMenu: ElementoNav[];
   constructor() {
     this.vociMenu = [
-      {nome: 'Home', indirizzo: '/home', ordine: 1},
-      {nome: 'Gallery', indirizzo: '/gallery', ordine: 0},
+      {nome: 'Home', indirizzo: '/home', ordine: 0},
+      {nome: 'Gallery', indirizzo: '/gallery', ordine: 1},
       {nome: 'Contact us', indirizzo: '/contact', ordine: 2}
     ];
    }
